@@ -22,3 +22,8 @@ if [[ ! -d "$HOME/.zsh" ]]; then
   mkdir -p "$HOME/.zsh"
   git clone https://github.com/sindresorhus/pure.git "$HOME/.zsh/pure"
 fi
+
+if [[ ! -d "$HOME/.fzf" ]]; then
+  git clone --depth 1 https://github.com/junegunn/fzf.git $HOME/.fzf
+  $HOME/.fzf/install --completion --key-bindings --update-rc --no-bash --no-zsh
+fi
