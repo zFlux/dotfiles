@@ -3,7 +3,7 @@ include() {
   [[ -f "$1" ]] && source "$1" || echo "ERROR loading ${1}"
 }
 
-export DOTFILES="~/dotfiles"
+export DOTFILES="$HOME/dotfiles"
 
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
@@ -109,7 +109,7 @@ source $ZSH/oh-my-zsh.sh
 alias zshconfig="code ~/.zshrc"
 alias sourcezsh="source ~/.zshrc"
 
-include $DOTFILES/nvm.zsh
-include $DOTFILES/pure.zsh
-include $DOTFILES/fzf.zsh
-include $DOTFILES/thinkific.zsh
+include "$DOTFILES/zsh/nvm.zsh"
+include "$DOTFILES/zsh/pure.zsh"
+include "$DOTFILES/zsh/fzf.zsh"
+include "$DOTFILES/zsh/thinkific.zsh"

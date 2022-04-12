@@ -11,3 +11,7 @@
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
+  - command: ./init.sh
+    stdout: true
+    stderr: true
+    stdin: true
