@@ -109,7 +109,10 @@ source $ZSH/oh-my-zsh.sh
 alias zshconfig="code ~/.zshrc"
 alias sourcezsh="source ~/.zshrc"
 
-include "$DOTFILES/zsh/nvm.zsh"
 include "$DOTFILES/zsh/pure.zsh"
 include "$DOTFILES/zsh/fzf.zsh"
-include "$DOTFILES/zsh/thinkific.zsh"
+
+if [[ $(uname) = Darwin ]]; then
+  include "$DOTFILES/zsh/nvm.zsh"
+  include "$DOTFILES/zsh/thinkific.zsh"
+fi
