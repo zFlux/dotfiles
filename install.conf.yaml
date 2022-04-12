@@ -8,6 +8,7 @@
     ~/.zshrc:
       path: ./zsh/base.zsh
       force: true
+    ~/.gitconfig: git.conf
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
