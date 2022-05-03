@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+export DOTFILES_INSTALLER="$( cd -- "$(dirname "$0")" >/dev/null 2>&1 ; pwd -P )"
+
 # Install oh-my-zsh
 if [[ ! -d $HOME/.oh-my-zsh ]]; then
   sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
@@ -35,4 +37,8 @@ if [[ $(uname) = Darwin ]]; then
     git clone --depth 1 https://github.com/junegunn/fzf.git $HOME/.fzf
     $HOME/.fzf/install --all --no-zsh
   fi
+
+  source ./mac/mac-setup.sh
 fi
+
+unset DOTFILES_INSTALLER
