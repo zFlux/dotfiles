@@ -28,8 +28,8 @@ This repository serves as my way to help me setup and maintain my Mac. It takes 
 
 1. Open up your Settings JSON in VSCode by using the command pallete and typing "settings json" and add the following:
 
-    ```json
-    // Replace "keltonkowalchuk" with your Github username if forking this repo
+    ```zsh
+    # Replace "keltonkowalchuk" with your Github username if forking this repo
     "dotfiles.repository": "keltonkowalchuk/dotfiles", 
     "dotfiles.installCommand": "~/dotfiles/install",
     "terminal.integrated.defaultProfile.linux": "zsh"
