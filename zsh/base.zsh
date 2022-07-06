@@ -108,9 +108,9 @@ alias zshconfig="code ~/.zshrc"
 alias sourcezsh="source ~/.zshrc"
 
 include "$DOTFILES/zsh/pure.zsh"
-include "$DOTFILES/zsh/fzf.zsh"
 
 if [[ $(uname) = Darwin ]]; then
   include "$DOTFILES/zsh/nvm.zsh"
   include "$DOTFILES/zsh/thinkific.zsh"
+  include "$DOTFILES/zsh/fzf.zsh"
 fi
