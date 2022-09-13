@@ -79,7 +79,7 @@ ZSH_AUTOSUGGEST_STRATEGY=(completion)
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-syntax-highlighting zsh-autosuggestions)
+plugins=(git zsh-syntax-highlighting zsh-autosuggestions zsh-fzf-history-search)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -108,9 +108,9 @@ alias zshconfig="code ~/.zshrc"
 alias sourcezsh="source ~/.zshrc"
 
 include "$DOTFILES/zsh/pure.zsh"
+include "$DOTFILES/zsh/fzf.zsh"
 
 if [[ $(uname) = Darwin ]]; then
-  include "$DOTFILES/zsh/nvm.zsh"
   include "$DOTFILES/zsh/thinkific.zsh"
-  include "$DOTFILES/zsh/fzf.zsh"
+  include "$DOTFILES/zsh/nvm.zsh"
 fi
