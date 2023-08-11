@@ -30,8 +30,7 @@ This repository serves as my way to help me setup and maintain my Mac. It takes 
 
     ```zsh
     # Replace "keltonkowalchuk" with your Github username if forking this repo
-    "dotfiles.repository": "keltonkowalchuk/dotfiles", 
-    "dotfiles.installCommand": "~/dotfiles/install",
+    "dotfiles.repository": "keltonkowalchuk/dotfiles",
     "terminal.integrated.defaultProfile.linux": "zsh"
     ```
 
